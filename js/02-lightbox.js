@@ -17,13 +17,5 @@ galleryEl.innerHTML = galleryAdd;
 
 var lightbox = new SimpleLightbox(".gallery a", {
     captionDelay: 250,
-    captionPosition: "bottom",
-    captionData: "alt",
-});
-
-galleryEl.addEventListener("click", (event) => {
-    event.preventDefault();
-    if (event.target.classList.contains("gallery__image")){
-        lightbox.open();
-    }
+    captionsData: "alt",
 });
