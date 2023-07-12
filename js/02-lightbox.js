@@ -2,12 +2,12 @@ import { galleryItems } from './gallery-items.js';
 // Change code below this line
 const galleryEl = document.querySelector(".gallery");
 const galleryAdd = galleryItems.map(({preview, original, description}) => {
-    return `<li class = "gallery__item">
-    <a class = "gallery__link" href = "${original}">
+    return `<li class="gallery__item">
+    <a class="gallery__link" href="${original}">
         <img 
-        class = "gallery__image"
-        src = "${preview}"
-        alt = "${description}"
+        class="gallery__image"
+        src="${preview}"
+        alt="${description}"
         />
     </a>
     </li>`;

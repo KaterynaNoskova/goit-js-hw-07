@@ -6,13 +6,13 @@ galleryContainerEl.insertAdjacentHTML("beforeend", imagesMarkup);
 
 function createItemsMarkup(item) {
     return item.map(({preview, original, description}) => {
-            return `<li class = "gallery__item">
-            <a class = "gallery__link" href = "${original}">
+            return `<li class="gallery__item">
+            <a class="gallery__link" href="${original}">
                 <img 
-                class = "gallery__image"
-                src = "${preview}"
-                data-source = "${original}"
-                alt = "${description}"
+                class="gallery__image"
+                src="${preview}"
+                data-source="${original}"
+                alt="${description}"
                 />
             </a>
             </li>`;
@@ -28,7 +28,7 @@ function onContainerClick(e){
         return;
     }
     const instance = basicLightbox.create(`
-    <img scr = "${e.target.dataset.source}" width="800" height="600">`)
+    <img src="${e.target.dataset.source}" width="800" height="600">`)
 
     instance.show()    
 };
